@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  z-index: 1;
+}
+
+header .logo a {
+  font-size: 30px;
+  padding: 15px 30px;
+  color: black;
+}
+
+header .logo a span {
+  color: #4ee0c8;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li a {
+  margin: 5px 20px;
+  font-size: 18px;
+  color: rgb(255, 252, 252);
+  padding: 10px 10px;
+}
+
+header nav ul li a:hover {
+  border-bottom: 2px solid #4ee0c8;
+  transition:  0.1s;
+}
+
+/*content */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  /* background-image: linear-gradient(to bottom right, rgba(90, 85, 85, 0.6),#4ee0c8), url("images/background.jpg"); */
+  background-image:url("images/background.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content h2 {
+  font-size: 32px;
+  padding: 5px;
+  color: black;
+}
+
+.content p {
+  font-size: 22px;
+  color: #4ee0c8;
+}
+
+/* menu */
+
+.menu {
+  background-color: white;
+  width: 100%;
+}
+
+.menu .menu-header {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-header h3 {
+  color: #4ee0c8;
+  padding: 10px 30px;
+}
+
+.menu-header h4 {
+  color: #4ee0c8;
+  padding: 10px 20px;
+}
+
+.menu .menu-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px 0;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.menu .menu-content .hot-coffee,
+.greentea,
+.minttea {
+  width: 250px;
+}
+
+.menu .menu-content .hot-coffee .hot-coffee-image img {
+  border-radius: 90%;
+}
+
+.menu .menu-content .greentea .greentea-image img {
+  border-radius: 50%;
+}
+
+.menu .menu-content .minttea .minttea-image img {
+  border-radius: 50%;
+}
+
+.menu .menu-content .hot-coffee-body,
+.greentea-body,
+.minttea-body {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.menu .menu-content .hot-coffee-body h2,
+.greentea-body h2,
+.minttea-body h2 {
+  color: #4ee0c8;
+}
+
+.menu .menu-content .hot-coffee-body label,
+.greentea-body label,
+.minttea-body label {
+  margin-top: 10px;
+  color: rgb(22, 156, 197);
+}
+
+/* shop */
+
+.shop {
+  width: 100%;
+  background-color: white;
+}
+
+.shop .shop-header {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shop .shop-header h3 {
+  color: #4ee0c8;
+  padding: 10px 30px;
+}
+
+.shop .shop-header h4 {
+  color: #4ee0c8;
+  padding: 10px 20px;
+}
+
+.shop-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px 0;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.shop-box .card {
+  width: 280px;
+  margin: 20px;
+}
+
+.shop-box .card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.shop-box .card-image img:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s ease-in-out;
+}
+
+.shop-box .card-body {
+  padding: 20px;
+  color: black;
+  border: 3px solid #3b3b3b;
+}
+
+.shop-box .card-body h3 {
+  padding: 10px 0;
+}
+
+.shop-box .card-body i {
+  color: yellow;
+  font-size: 10px;
+  position: relative;
+  bottom: 5px;
+}
+
+.shop-box .card-body .cash {
+  font-size: 22px;
+  margin-left: 90px;
+}
+
+/* contact */
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-top: 2px solid white;
+}
+
+.contact .contact-box {
+  flex: 1;
+}
+
+.contact img {
+  width: 100%;
+  height: 100%;
+}
+.contact-image img {
+  opacity: 0.9;
+}
+.contact-body {
+  background-color: white;
+  height: 100%;
+  border: 2px solid white;
+}
+
+.contact-body form {
+  padding: 50px 40px;
+}
+
+.contact-body h2 {
+  color: #4ee0c8;
+}
+
+form .form-content {
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid lightgray;
+}
+
+form .form-content input {
+  width: 100%;
+  height: 40px;
+  padding: 0 5px;
+  font-size: 17px;
+  border: none;
+  background: none;
+  outline: none;
+  color: black;
+}
+
+form .form-content label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: gray;
+  transform: translateY(-50%);
+  font-size: 17px;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+form .form-content span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #4ee0c8;
+  transform: 0.4s;
+}
+
+form .form-content input:focus ~ label,
+form .form-content input:valid ~ label {
+  top: -5px;
+  color: #4ee0c8;
+}
+
+form .form-content input:focus ~ span::before,
+form .form-content input:valid ~ span::before {
+  width: 100%;
+}
+
+.contact-body form button {
+  padding: 10px 20px;
+  font-size: 17px;
+  border: none;
+  background-color: #4ee0c8;
+  color: black;
+  border: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+
+.contact-body form button:hover {
+  background-color: rgb(24, 22, 175);
+}
+
+/* footer */
+
+.footer {
+  background-color: white;
+  border-top: 2px solid white;
+}
+
+.footer .footer-box {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .footer-box .social-media a {
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  font-size: 17px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.footer .footer-box .social-media a:hover {
+  opacity: 0.9;
+  transition: 0.5s all ease-in-out;
+}
+
+.footer .footer-box .copyrights {
+  color: black;
+}
+
+.footer .footer-box .brand {
+  font-size: 17px;
+  color: black;
+}
+
+.footer .footer-box .brand span {
+  color: #4ee0c8;
+}
+
+@media (max-width: 998px) {
+  /* header */
+  header {
+    flex-direction: column;
+    height: 150px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  }
+
+  .menu-header .logo {
+    font-size: 25px;
+  }
+
+  header nav ul li a {
+    font-size: 16px;
+    flex-direction: column;
+    display: inline-block;
+    margin-top: 16px;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content h2 {
+    font-size: 28px;
+  }
+
+  .content p {
+    font-size: 18;
+  }
+}
+
+@media (max-width: 950px) {
+  .contact .contact-box {
+    flex: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .menu .menu-content .hot-coffee .greentea .minttea {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer .footer-box .social-media a {
+    color: black;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .footer .footer-box .copyrights {
+    color: black;
+    font-size: 15px;
+  }
+
+  .footer .footer-box .brand {
+    color: black;
+    font-size: 18px;
+  }
+}
+
+@media (maxwidth: 500px) {
+  /* header */
+
+  header .logo a {
+    font-size: 23px;
+  }
+
+  header nav ul li a {
+    font-size: 17px;
+    flex-direction: column;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  header nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* content */
+  h2{
+    font-size: 23px;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
+  /* footer */
+  .footer .footer-box .social-media a {
+    color: black;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+
+  .footer .footer-box .copyrights {
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .footer .footer-box .brand {
+    color: black;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+
+@media(max-width:410px){
+
+    /* header */
+    header{
+        height: 120px;
+    }
+    header .logo a {
+        font-size: 23px;
+        color: black;
+        padding: 15px 30px;
+      }
+    
+      header nav ul li a {
+        font-size: 12px;
+        flex-direction: column;
+        display: inline-block;
+        margin-top: 10px;
+        padding: 5px 5px;
+      }
+    
+      header nav{
+        display: flex;
+        flex-direction: column;
+      }
+
+       /* content */
+  .content h2{
+    font-size: 20px;
+  }
+
+  .content p{
+    font-size: 13px;
+  }
+
+
+    
+}
